@@ -15,7 +15,7 @@
         $ellipsis_length = strlen($ellipsis);
         
         // First, check if the text can be returned straight away.
-        if ($text_length < $length) {
+        if ($text_length <= $length) {
             return $text;
         }
         
@@ -27,3 +27,7 @@
         
         return $text;
     }
+    
+    
+    echo truncate_with_ellipsis("hello", 5);
+    echo "\n";
