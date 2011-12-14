@@ -27,7 +27,3 @@
         
         return $text;
     }
-    
-    
-    echo truncate_with_ellipsis("hello", 5);
-    echo "\n";
